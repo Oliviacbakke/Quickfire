@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111318">
+  <title>Quickfire — trivia, together</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Quickfire home"><span class="brand-mark">Q</span><span>quickfire<span class="brand-dot">.</span></span></a>
+    <div class="top-note"><span class="online-dot"></span> THE PARTY QUIZ</div>
+    <button class="rules-link" id="rulesButton">HOW TO PLAY <span>↗</span></button>
+  </header>
+
+  <main id="app" class="app-shell"></main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="rulesOverlay" class="overlay hidden">
+    <section class="modal rules-modal" role="dialog" aria-modal="true" aria-labelledby="rulesTitle">
+      <button class="close-button" data-close-rules aria-label="Close">×</button>
+      <div class="eyebrow">THE QUICK VERSION</div><h2 id="rulesTitle">Big brains. <em>Bragging rights.</em></h2>
+      <ol class="rules-list">
+        <li><b>Get your crew together.</b><span>One person hosts. Everyone else joins with the room code. 2–8 players.</span></li>
+        <li><b>Eight questions. Fifteen seconds each.</b><span>Pick your answer and lock it in before the timer runs out.</span></li>
+        <li><b>Back your brain.</b><span>Wager 1, 2, or 3 points. Right answers win your wager; wrong answers lose it. Your score never drops below zero.</span></li>
+        <li><b>Top score takes it.</b><span>See the answer and standings after every round. Ties share the win.</span></li>
+      </ol>
+      <button class="button button-primary button-wide" data-close-rules>GOT IT <span>→</span></button>
+    </section>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

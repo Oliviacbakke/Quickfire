@@ -1,0 +1,9 @@
+{
+  "name": "quickfire-party-trivia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A real-time room-code trivia party game",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
